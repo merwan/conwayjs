@@ -21,6 +21,11 @@
       for (var y=0; y<this.height; y++) {
         for (var x=0; x<this.width; x++) {
           var aliveNeighbours = this.countAliveNeighbours(prevBoard, x, y);
+          if (aliveNeighbours < 2 || aliveNeighbours > 3) {
+            this.board[y][x] = 0;
+          } else if (aliveNeighbours == 3) {
+            this.board[y][x] = 1;
+          }
         }
       }
     },
@@ -56,6 +61,10 @@ var game = new Life([
     [0, 0, 1, 0, 0],
     [0, 0, 0, 0, 0]
 ]);
+
+console.log(game.toString());
+
+game.tick();
 
 console.log(game.toString());
 
