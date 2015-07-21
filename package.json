@@ -4,8 +4,16 @@
   "description": "Conway's Game of Life in JavaScript",
   "author": "Merouane Atig",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.11.2"
+  },
+  "homepage": "https://github.com/merwan/conwayjs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/merwan/conwayjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/merwan/conwayjs/issues"
   }
 }
